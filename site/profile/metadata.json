@@ -1,0 +1,36 @@
+{
+  "name": "puppet-herriges",
+  "version": "0.0.1",
+  "author": "Cody Herriges",
+  "summary": "Provides profiles used to automte my home systems",
+  "license": "Apache-2.0",
+  "source": "https://gitlab.herriges.org/cody/puppet-herriges.git",
+  "project_page": "https://gitlab.herriges.org/cody/puppet-herriges.git",
+  "issues_url": "https://gitlab.herriges.org/cody/puppet-herriges/issues",
+  "dependencies": [
+    {"name":"puppetlabs/stdlib","version_requirement":">= 4.5.0 < 5.0.0"}
+    {"name":"puppetlabs/concat","version_requirement":">= 1.2.4 < 2.0.0"}
+    {"name":"puppetlabs/apt","version_requirement":">= 2.1.1 < 3.0.0"}
+    {"name":"stahnma/epel","version_requirement":">= 1.1.1 < 2.0.0"}
+    {"name":"vshn/gitlab","version_requirement":">= 1.5.0 < 2.0.0"}
+    {"name":"camptocamp/postfix","version_requirement":">= 1.2.13 < 2.0.0"}
+  ],
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "CentOS",
+      "operatingsystemrelease": [
+        "7"
+      ]
+    }
+  ],
+  "requirements": [
+    {
+      "name": "pe",
+      "version_requirement": ">= 3.3.0 < 2015.3.0"
+    },
+    {
+      "name": "puppet",
+      "version_requirement": ">= 3.0.0 < 5.0.0"
+    }
+  ]
+}
