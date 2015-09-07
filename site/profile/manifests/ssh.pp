@@ -15,7 +15,7 @@ class profile::ssh {
       'MACs'                            => 'hmac-sha2-512-etm@openssh.com,hmac-sha2-256-etm@openssh.com,hmac-ripemd160-etm@openssh.com,umac-128-etm@openssh.com,hmac-sha2-512,hmac-sha2-256,hmac-ripemd160,umac-128@openssh.com',
       'Protocol'                        => '2',
       'HostKey'                         => [ '/etc/ssh/ssh_host_ed25519_key', '/etc/ssh/ssh_host_rsa_key' ],
-      'AllowGroups'                     => [ 'users', 'vagrant' ],
+      'AllowGroups'                     => [ 'users', 'vagrant', 'git' ],
     }
   }
 

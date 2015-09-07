@@ -6,7 +6,8 @@ class profile::gitlab(String $hostname) {
     external_url   => "https://${hostname}",
     service_enable => true,
     nginx          => {
-      redirect_http_to_https => true
+      redirect_http_to_https => true,
+      listen_addresses       => ['*', '[::]']
     }
   }
 }
