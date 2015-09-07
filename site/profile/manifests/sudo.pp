@@ -8,6 +8,10 @@ class profile::sudo {
   }
   sudo::conf { 'admins':
     priority => 1,
-    content  => 'ody ALL=(ALL) NOPASSWD: ALL',
+    content  => '%wheel ALL=(ALL) NOPASSWD: ALL',
+  }
+  sudo::conf { 'vagrant':
+    priority => 1,
+    content  => 'vagrant ALL=(ALL) NOPASSWD: ALL',
   }
 }

@@ -2,6 +2,7 @@
 #
 define profile::accounts::user(
   $gecos,
+  $groups   = 'users',
   $shell    = '/bin/zsh',
   $dotfiles = true
 ) {
