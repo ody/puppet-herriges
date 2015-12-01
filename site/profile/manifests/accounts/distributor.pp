@@ -5,7 +5,10 @@ class profile::accounts::distributor {
   user { 'distributor':
     comment    => 'A user used to distribute files synced from dropbox',
     uid        => '1002',
-    shell      => '/bin/bash',
+    shell      => $::operatingsystem ? {
+      'FreeBSD' => '/usr/local/bin/bash',
+      default   => '/bin/bash',
+    },
     managehome => true,
   }
 
