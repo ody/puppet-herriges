@@ -15,5 +15,5 @@ class profile {
     ]
   }
 
-  package { 'zsh': ensure => present }
+  package { ['bash', 'zsh']: ensure => present }
 }
